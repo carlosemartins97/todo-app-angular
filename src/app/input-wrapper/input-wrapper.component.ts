@@ -15,8 +15,10 @@ export class InputWrapperComponent implements OnInit {
   }
 
   AddNewTask() {
-    this.onTaskAdded.emit(this.inputTask.nativeElement.value);
-    this.inputTask.nativeElement.value = '';
+    if(this.inputTask.nativeElement.value !== '') {
+      this.onTaskAdded.emit(this.inputTask.nativeElement.value);
+      this.inputTask.nativeElement.value = '';
+    }
   }
 
 }
