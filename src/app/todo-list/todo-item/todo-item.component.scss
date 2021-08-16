@@ -1,0 +1,30 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: white;
+  color: $background;
+  padding: 20px;
+  border-radius: 5px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 10px;
+    }
+  }
+
+  &__delete {
+    border: none;
+    background: $danger;
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+    color: white;
+    @include hover;
+  }
+}
