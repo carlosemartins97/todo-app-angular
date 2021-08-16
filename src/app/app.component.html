@@ -5,11 +5,11 @@
 
   <section class="todo">
     <div class="input">
-      <app-input-wrapper></app-input-wrapper>
+      <app-input-wrapper (onTaskAdded)="GetTasks($event)"></app-input-wrapper>
     </div>
 
     <div class="list">
-      <app-todo-list></app-todo-list>
+      <app-todo-list [tasks]="tasks"></app-todo-list>
     </div>
   </section>
 </main>

@@ -1,3 +1,5 @@
 <ul>
-  <li><app-todo-item></app-todo-item></li>
+  <li *ngFor="let task of tasks;">
+    <app-todo-item [task]="task"></app-todo-item>
+  </li>
 </ul>

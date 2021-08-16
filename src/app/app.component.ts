@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  tasks: Array<string> = [];
+
+  GetTasks(data: string) {
+    this.tasks.push(data);
+  }
 }

@@ -1,7 +1,7 @@
 <div class=wrapper>
   <div class="wrapper__title">
-    <input type="checkbox">
-    <p>Fazer compras</p>
+    <input type="checkbox" (click)="onCheck()">
+    <p [appTaskDone]="isChecked">{{task}}</p>
   </div>
 
   <button class="wrapper__delete">x</button>

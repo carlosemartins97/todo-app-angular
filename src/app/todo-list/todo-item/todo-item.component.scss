@@ -16,6 +16,11 @@
     input {
       margin-right: 10px;
     }
+
+    &--done {
+      text-decoration: line-through;
+      color: #999;
+    }
   }
 
   &__delete {
