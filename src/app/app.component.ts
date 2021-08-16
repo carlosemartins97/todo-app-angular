@@ -12,4 +12,8 @@ export class AppComponent {
   GetTasks(data: string) {
     this.tasks.push(data);
   }
+  
+  onDeleteTask(index: number) {
+    this.tasks.splice(index, 1);
+  }
 }

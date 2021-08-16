@@ -9,7 +9,7 @@
     </div>
 
     <div class="list">
-      <app-todo-list [tasks]="tasks"></app-todo-list>
+      <app-todo-list (IndexEvent)="onDeleteTask($event)" [tasks]="tasks"></app-todo-list>
     </div>
   </section>
 </main>
