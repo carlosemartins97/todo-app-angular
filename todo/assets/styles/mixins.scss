@@ -1,0 +1,7 @@
+@mixin hover {
+  transition: 0.3s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+}
